@@ -1,7 +1,7 @@
 Code was distributed in the separate folders, according to the multilayer architecture. The main folder contains the main code, and the subfolders contain the code for the corresponding layers.
 
-Lunch hazelcast cluster:
-![img_1.png](imgs/img_1.png)
+Lunch hazelcast cluster with 3 nodes:
+![imgs/img1.png](imgs/img1.png)
 
 
 Lunch 10 POST requests to the server:
