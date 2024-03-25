@@ -1,7 +1,9 @@
+from messages_service import memory
+
 
 class GetService:
 
     @staticmethod
     def get_messages():
         print("GET request")
-        return {"msgs": "Not implemented yet."}, 200
+        return {"msgs": ", ".join(memory)}, 200

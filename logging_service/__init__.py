@@ -3,11 +3,14 @@ from flask_restful import Api
 from hazelcast import HazelcastClient
 
 
+ip = '192.168.1.67'
+
+
 client = HazelcastClient(
     cluster_name="hazelcast-cluster",
-    cluster_members=["192.168.1.67:5701",
-                     "192.168.1.67:5702",
-                     "192.168.1.67:5703"]
+    cluster_members=[f"{ip}:5701",
+                     f"{ip}:5702",
+                     f"{ip}:5703"]
     ,
     lifecycle_listeners=[
         lambda state: print("Lifecycle event >>>", state),
